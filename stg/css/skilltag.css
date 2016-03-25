@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************************************************************************
+
+	<css/skilltag.css>
+
+*******************************************************************************************/
+
+#skilltag {
+	width: 530px;
+	height: 325px;
+	margin: 40px auto 0 auto;
+        padding: 40px auto 0 auto;
+	overflow: hidden;
+	background: url(../img/tag_BG.png) no-repeat 50% 50% ;
+}
+#skilltag li {
+	position:absolute;
+}
+#skilltag div {
+    top: 15%;
+    height: 45px;
+    float: left;
+    margin: 4px;
+    position:relative;
+}
+
+#skilltag .size1 { font-size:15px; }
+#skilltag .size2 { font-size:20px; }
+#skilltag .size3 { font-size:25px; }
+#skilltag .size4 { font-size:30px; }
+#skilltag .size5 { font-size:35px; }
+#skilltag .size6 { font-size:40px; }
+
+#skilltag .size1 div { top:15px; }
+#skilltag .size2 div { top:10px; }
+#skilltag .size3 div { top:8px; }
+#skilltag .size4 div { top:4px; }
+#skilltag .size5 div { top:2px; }
+#skilltag .size6 div { top:0px; }
+
+/* スキルタグノーマル */
+#skilltag.normal {
+	border: solid 1px #231815;
+	background-color: #ffffff;
+}
+
+#skilltag.normal .color1 { color:#C9BC9C; }
+#skilltag.normal .color2 { color:#A48B78; }
+#skilltag.normal .color3 { color:#7A6A56; }
+#skilltag.normal .color4 { color:#444F8E; }
+#skilltag.normal .color5 { color:#384151; }
+#skilltag.normal .color6 { color:#000D44; }
+/* 強調色 */
+#skilltag.normal .colorEX { color:#D70051;font-weight:bold; }
+
+
+/* スキルタグ赤 */
+#skilltag.red {
+	border: solid 1px #E61673;
+	background-color: #FFF8FD;
+}
+
+#skilltag.red .color1 { color:#8C726C; }
+#skilltag.red .color2 { color:#7F4A40; }
+#skilltag.red .color3 { color:#821F00; }
+#skilltag.red .color4 { color:#F47D9D; }
+#skilltag.red .color5 { color:#EA4468; }
+#skilltag.red .color6 { color:#FF001F; }
+/* 強調色 */
+#skilltag.red .colorEX { color:#FF7F00;font-weight:bold; }
+
+
+/* スキルタグ青 */
+#skilltag.blue {
+	border: solid 1px #036EB8;
+	background-color: #EBFFFE;
+}
+
+#skilltag.blue .color1 { color:#8AA0AC; }
+#skilltag.blue .color2 { color:#3B5E66; }
+#skilltag.blue .color3 { color:#1D4854; }
+#skilltag.blue .color4 { color:#51AACE; }
+#skilltag.blue .color5 { color:#1E96E0; }
+#skilltag.blue .color6 { color:#003F9B; }
+/* 強調色 */
+#skilltag.blue .colorEX { color:#22AC38;font-weight:bold; }
+
+
+
+
+
+
+
+
+
+
+

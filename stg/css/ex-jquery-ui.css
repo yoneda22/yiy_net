@@ -1,0 +1,5 @@
+/**
+ * jQuery-UI DIALOG デザイン拡張CSS
+ */
+.ui-widget-content { border: 1px solid #34A1AC; background: #F7F8F8 50% 50% repeat-x; color: #222222; }
+.ui-widget-header  { border: 1px solid #34A1AC; background: #F7F8F8 50% 50% repeat-x; color: #036EB8; font-weight: bold; }

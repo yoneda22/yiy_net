@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>月予算チェッカー</title>
+<script src="./js/jquery.min.js"></script>
+<script type="javascript">
+
+function xDay(y,m,d) {
+  var today=new Date();
+  var xday=new Date(y,m-1,d);
+  var dayMS=24*60*60*1000;
+  var n=Math.floor((xday.getTime()-today.getTime())/dayMS)+1;
+  return n;
+}
+function nokori(){
+  var dt;dt=new Date();
+  dt.setMonth(dt.getMonth()+1);dt.setDate(0);
+  var y=dt.getFullYear();
+  var m=dt.getMonth()+1;
+  var d=dt.getDate();
+  return xDay(y,m,d);
+}
+
+
+
+//var MAX=293000;
+var MAX = $("#max").val();
+//var now=window.prompt("確定額","");
+var now = $("#use").val().replace(",", "");
+var sa=MAX-now;
+var day=nokori()+1;
+alert("予算残="+sa+":残日数="+day+":日割="+(sa/day)); 
+</script>
+</head>
+<body>
+<div>
+  <form>
+     月予算：<input id="max" type="text" value="23"><br />
+     使用額：<input id="use" type="text" value=""><br />
+     <input id="check" type="button" value="確認" />
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,489 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************************************************************************
+
+	<css/common.css>
+
+*******************************************************************************************/
+
+/*==========================================================================================
+
+	// 共通
+
+==========================================================================================*/
+/* リンク */
+a:link { color:#171C61; text-decoration:underline; }
+a:visited { color:#171C61; }
+a:hover { color:#00a0e9; }
+a:active { color:#00a0e9; }
+a:focus { text-decoration:none; }
+.underline { text-decoration:underline; }
+
+img{
+	margin: 0;
+	padding: 0;
+	border: none;
+	vertical-align:top;
+	-ms-interpolation-mode: bicubic;
+}
+
+.imghover:hover {
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.imghover:active {
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.clearFix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+
+/* 仕切り線 */
+hr {
+	border-top: dotted 1px #231815;
+	margin:0;
+	padding:0;
+}
+
+
+/* 文字色 */
+.cBlue { color: #004DA0; }
+.cRBlue { color: #036EB8; }
+.cRed { color: #BF0000; }
+.cBlack { color: #333333; }
+.cWhite { color: #ffffff; }
+
+
+/* テキストの位置　横 */
+.tLeft { text-align: left; }
+.tCenter { text-align: center; }
+.tRight { text-align: right; }
+
+/* テキストの位置　縦 */
+.vTop { vertical-align: top; }
+.vMiddle { vertical-align: middle; }
+.vBottom { vertical-align: bottom; }
+
+
+/* フォントの大きさ */
+.fs6 { font-size: 6px; font-size: 0.6rem; }
+.fs7 { font-size: 7px; font-size: 0.7rem; }
+.fs8 { font-size: 8px; font-size: 0.8rem; }
+.fs9 { font-size: 9px; font-size: 0.9rem; }
+.fs10 { font-size: 10px; font-size: 1.0rem; }
+.fs11 { font-size: 11px; font-size: 1.1rem; }
+.fs12 { font-size: 12px; font-size: 1.2rem; }
+.fs13 { font-size: 13px; font-size: 1.3rem; }
+.fs14 { font-size: 14px; font-size: 1.4rem; }
+.fs15 { font-size: 15px; font-size: 1.5rem; }
+.fs16 { font-size: 16px; font-size: 1.6rem; }
+.fs18 { font-size: 18px; font-size: 1.8rem; }
+.fs20 { font-size: 20px; font-size: 2.0rem; }
+.fs22 { font-size: 22px; font-size: 2.2rem; }
+.fs24 { font-size: 24px; font-size: 2.4rem; }
+.fs26 { font-size: 26px; font-size: 2.6rem; }
+.fs28 { font-size: 28px; font-size: 2.8rem; }
+.fs30 { font-size: 30px; font-size: 3.0rem; }
+.fs32 { font-size: 32px; font-size: 3.2rem; }
+.fs36 { font-size: 36px; font-size: 3.6rem; }
+.fs40 { font-size: 40px; font-size: 4.0rem; }
+
+
+/* フォントの太さ */
+.fwN { font-weight: normal; }
+.fwB { font-weight: bold; }
+
+
+/* その他の共通設定は asset.css に記述 */
+
+
+/*==========================================================================================
+
+	// 全体
+
+==========================================================================================*/
+html { font-size: 62.5%; }
+body, input, button {
+	font-family: 'Droid Serif',Meiryo,"MS PGothic","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","sans-serif";
+	font-size: 14px; font-size: 1.4rem; /* =14px */
+	line-height:1.4;
+	color:#231815;
+	word-break:break-all;
+	/*
+	white-space: pre-wrap;
+	white-space: pre-line;
+	white-space: -o-pre-wrap;
+	white-space: -moz-pre-wrap;
+	*/
+}
+body {
+	background-image: url(../img/bg.gif);
+}
+#TOP{
+	width: 930px;
+	margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------------------------
+    ヘッダー
+-----------------------------------------------------------------------------------------*/
+#gHeader {
+	padding: 20px 0;
+
+}
+
+/*-----------------------------------------------------------------------------------------
+    コンテンツ
+-----------------------------------------------------------------------------------------*/
+#contents {
+}
+#intro {
+	width: 650px;
+	float: left;
+}
+#menu {
+	width: 250px;
+	float: right;
+	margin-right: 10px;
+}
+
+table#tagSample {
+	width: 100%;
+	margin-top: 10px;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+table#tagSample td {
+	width: 33.3333333333333%;
+	height: 128px;
+	text-align: center;
+	vertical-align: middle;
+}
+table#tagSample td a {
+	width: 100%;
+}
+
+
+/* プロフィール入力 */
+#profile {
+	padding: 0 30px;
+}
+#profile table {
+	width: 100%;
+	margin-top: 6px;
+	border: solid 2px #036EB8;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background-color: #ffffff;
+}
+#profile table th {
+	width: 180px;
+	border: solid 1px #036EB8;
+	background-color: #036EB8;
+	color: #ffffff;
+	padding: 6px;
+	vertical-align: middle;
+}
+#profile table td {
+	border: solid 1px #036EB8;
+	background-color: #BDD6D6;
+	padding: 6px 6px 6px 12px;
+	vertical-align: middle;
+}
+
+/* buttonリセット */
+button {
+	border: none;
+	background: none;
+	text-indent:-9898px;
+	font-size: 0px;
+	line-height: 0px;
+}
+button:hover {
+	background: none;
+}
+
+
+
+/* 経歴入力 */
+#history {
+	margin-top: 20px;
+	padding: 0 30px;
+}
+#history table {
+	width: 100%;
+	margin-top: 6px;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+#history table th {
+	height: 36px;
+	padding: 0 6px;
+	vertical-align: middle;
+}
+#history table td {
+	padding: 5px;
+	font-size: 12px; font-size: 1.2rem;
+	vertical-align: middle;
+}
+#history table td {
+	border: solid 1px #61A7AA;
+	background-color: #BDD6D6;
+}
+#history table tr:nth-child(odd) td {
+	background-color: #ffffff;
+}
+#history .w12p { width: 12%; }
+
+#history .title {
+	width: 28%;
+	border: solid 1px #036EB8;
+	background-color: #036EB8;
+	color: #ffffff;
+}
+#history .titlecheck {
+	width: 10%;
+	border: solid 1px #036EB8;
+	background-color: #036EB8;
+	color: #ffffff;
+}
+#history .titleterm {
+	width: 14%;
+	border: solid 1px #036EB8;
+	background-color: #036EB8;
+	color: #ffffff;
+}
+
+/* 有効 */
+#history .on {
+	border: solid 1px #036EB8;
+	background-color: #036EB8;
+	color: #ffffff;
+}
+
+/* 無効 */
+#history .off {
+	border: solid 1px #036EB8;
+	background-color: #61A7AA;
+	color: #ffffff;
+}
+
+
+
+
+/* ポップアップ */
+.popup {
+	width: 520px;
+	border: solid 1px #61A7AA;
+	background: #f7f8f8;
+	background: -moz-linear-gradient(top,  #f7f8f8 0%, #efefef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f8f8), color-stop(100%,#efefef));
+	background: -webkit-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: -o-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: -ms-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: linear-gradient(to bottom,  #f7f8f8 0%,#efefef 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f8', endColorstr='#efefef',GradientType=0 );
+	padding: 25px;
+}
+.popup .title {
+	color: #036EB8;
+	font-size: 16px; font-size: 1.6rem;
+}
+.popup .box {
+	border: solid 1px #61A7AA;
+	background: #ffffff;
+	padding: 8px 15px;
+}
+
+/* アカウント作成 */
+#signUp {
+	border: solid 1px #61A7AA;
+	background: #f7f8f8;
+	background: -moz-linear-gradient(top,  #f7f8f8 0%, #efefef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f8f8), color-stop(100%,#efefef));
+	background: -webkit-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: -o-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: -ms-linear-gradient(top,  #f7f8f8 0%,#efefef 100%);
+	background: linear-gradient(to bottom,  #f7f8f8 0%,#efefef 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f8', endColorstr='#efefef',GradientType=0 );
+	padding: 25px;
+}
+#signUp .box {
+	border: solid 1px #61A7AA;
+	background: #ffffff;
+	padding: 8px 15px;
+}
+
+
+
+
+/* 利用規約 */
+#privacyPolicy {
+	height: 200px;
+	margin-top: 10px;
+	border: solid 1px #61A7AA;
+	background: #ffffff;
+	padding: 15px;
+	overflow-y:scroll;
+}
+
+
+
+
+/*========================== ボタン ==========================*/
+
+/* ログインボタン */
+#imageBtn01 {
+	border: 0px;
+	width: 184px;
+	height: 34px;
+	background: url(../img/btn01.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* アカウント作成ボタン */
+#imageBtn02 {
+	border: 0;
+	width: 201px;
+	height: 34px;
+	background: url(../img/btn02.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 送信ボタン */
+#imageBtn03 {
+	border: 0;
+	width: 183px;
+	height: 34px;
+	background: url(../img/btn03.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 編集するボタン */
+#imageBtn04 {
+	border: 0px;
+	width: 184px;
+	height: 34px;
+	background: url(../img/btn04.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 編集ボタン */
+#imageBtn05 {
+	border: 0px;
+	width: 76px;
+	height: 27px;
+	background: url(../img/btn05.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 追加するボタン */
+#imageBtn06 {
+	border: 0px;
+	width: 184px;
+	height: 34px;
+	background: url(../img/btn06.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 入力するボタン */
+#imageBtn07 {
+	display: inline;
+	vertical-align: middle;
+	border: 0;
+	width: 130px;
+	height: 24px;
+	background: url(../img/btn07.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 確定するボタン */
+#imageBtn08 {
+	border: 0;
+	width: 183px;
+	height: 34px;
+	background: url(../img/btn08.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* 変更するボタン */
+#imageBtn09 {
+	border: 0;
+	width: 183px;
+	height: 34px;
+	background: url(../img/btn09.png) left top no-repeat;
+	cursor: pointer;
+}
+
+/* ダウンロードボタン */
+#imageBtn10 {
+	border: 0;
+	width: 400px;
+	height: 73px;
+	background: url(../img/btn_skiltag.png) left top no-repeat;
+	cursor: pointer;
+}
+#imageBtn11 {
+	border: 0;
+	width: 400px;
+	height: 73px;
+	background: url(../img/btn_history.png) left top no-repeat;
+	cursor: pointer;
+}
+
+
+
+/* スキル入力 */
+#skillInputTab {
+	margin: 5px auto;
+}
+#skillInputTab td {
+	font-size: 16px; font-size: 1.6rem;
+	padding: 0 12px;
+	border-right: solid 1px #333333;
+}
+#skillInputTab td:last-child {
+	border-right: none;
+}
+.skillInput {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing:0 20px;
+
+}
+.skillInput td {
+	width: 20%;
+	font-size: 15px; font-size: 1.5rem;
+}
+.skillInput td input {
+	vertical-align: middle;
+}
+
+
+/*-----------------------------------------------------------------------------------------
+    フッター
+-----------------------------------------------------------------------------------------*/
+#gFooter {
+	margin: 20px 0;
+	padding: 6px;
+	background-color: #036EB8;
+	color: #ffffff;
+	text-align: center;
+}
+#gFooter a {
+	color: #ffffff;
+}
+#gFooter a:hover, #gFooter a:focus {
+	color: #00a0e9;
+}
+
+
+

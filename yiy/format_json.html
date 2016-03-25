@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>JSON整形</title>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone-min.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+  $('#execute').click(function() {
+    var input = $('#input').val();
+    try {
+      var json = JSON.parse(input);
+    } catch (e) {
+      alert(e);
+    }
+    $('#output').val(JSON.stringify(json, null, "  "));
+  });
+});
+
+// -->
+</script>
+</head>
+<body>
+
+<form>
+
+  <textarea id="input" cols="40" rows="30"></textarea>
+  <input id="execute" type="button" value="整形" />
+  <textarea id="output"  cols="40" rows="30"></textarea>
+
+</form>
+
+</body>
+</html>

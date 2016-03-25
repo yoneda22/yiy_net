@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "myFont";
+  src: url("webFont.eot?") format('eot'),
+       url("webFont.woff") format('woff');
+}
+.myFontClass {
+  font-family: "myFont";
+}
