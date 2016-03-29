@@ -1,0 +1,6 @@
+cnf/
+stg/templates/templates_c/
+yiy/templates/templates_c/
+tmp/*
+!.gitkeep
+
